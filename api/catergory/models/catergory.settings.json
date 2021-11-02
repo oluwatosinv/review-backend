@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catergories",
+  "info": {
+    "name": "catergory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "reviews": {
+      "via": "catergories",
+      "collection": "review"
+    }
+  }
+}
